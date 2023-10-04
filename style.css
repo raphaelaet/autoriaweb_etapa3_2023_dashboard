@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+:root{
+    --cor_menu : #AED3B1;
+    --altura_cabecalho: 55px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    background-color: var(--cor_menu);
+    align-items: center;
+    height: var(--altura_cabecalho);
+    padding: 35px 40px;
+}
+
+.cabecalho__detalhes {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__detalhes__logo {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.cabecalho__detalhes__logo:hover{
+    transform: scale(1.2);
+}
+
+.cabecalho__detalhes__user{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover; /* Melhora a apresentação da imagem, diminuindo distorções */
+}
+
+.cabecalho__detalhes__user:hover{
+    transform: scale(1.2);
+}
+
+.corpo{
+    height: calc(100vh - var(--altura_cabecalho));
+    display: flex;
+}
+
+.corpo__menu {
+    width: 20%;
+    height: 100%;    
+    background-color: #639A67;
+}
+
+.corpo__menu__nav button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.corpo__menu__nav button:hover {
+    background: #D9BF77;
+    color: black;
+}
+
+.corpo__principal {
+    width: 80%;
+    height: 100%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 50px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilo para mensagens de erro (opcional) */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

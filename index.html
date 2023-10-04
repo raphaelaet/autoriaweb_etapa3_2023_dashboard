@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__detalhes">
+            <img src="./images/IFRN-Horizontal-Transparente-1.png" alt="Logo da empresa" class="cabecalho__detalhes__logo">
+            <i class="material-icons">menu</i>
+        </div>
+        <div class="cabecalho__detalhes">
+            <img class="cabecalho__detalhes__user" src="./images/user.jpg" alt="Usuário">
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <div class="corpo">
+        <aside class="corpo__menu">
+            <nav class="corpo__menu__nav">
+                <button>
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </button>
+                <hr>
+                <button>
+                    <i class="material-icons">person</i>
+                    <span>Alunos</span>
+                </button>
+                <hr>
+                <button>
+                    <i class="material-icons">school</i>
+                    <span>Professores</span>
+                </button>
+                <hr>
+                <button>
+                    <i class="material-icons">class</i>
+                    <span>Disciplinas</span>
+                </button>
+                <hr>
+            </nav>
+        </aside>
+        <!--FIM MENU-->
+
+        <main class="corpo__principal">
+
+            <form class="formulario_produto">
+                <label for="nome">Nome do Produto:</label>
+                <input class="campo" type="text" id="nome" name="nome"><br><br>
+               
+                <label for="descricao">Descrição:</label>
+                <textarea class="campo" id="descricao" name="descricao"></textarea><br><br>
+               
+                <label for="valor">Valor:</label>
+                <input class="campo" type="number" id="valor" name="valor" step="0.01"><br><br>
+               
+                <input type="submit" value="Cadastrar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descricao</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo_tabela_produto">
+
+                </tbody>
+
+            </table>
+           
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
